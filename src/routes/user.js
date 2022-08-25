@@ -4,6 +4,7 @@ import * as controller from "../controllers/user.js";
 const router = Express();
 
 router.route("/").get(controller.getAllUsers);
+router.route("/all").get(controller.getAllUsers);
 router.route("/new").post(controller.createUser);
 router
     .route("/:id")
